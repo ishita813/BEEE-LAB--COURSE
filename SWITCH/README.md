@@ -1,0 +1,6 @@
+This file contains :- Information about a program which includes on and off of an led with the the audrino.
+Theory:- Take a switch and as the power source is being provided by the audrino but due to the continuos supply means also the presence of some voltage even if the switch is off we have to do this ground but when we ground the switch led connected on ther either side of the audrino or the in the different pin donot going to get current so as to compensate this we add resistance of about more than 10k ohm. Also the led connected is going to ground so that even if more current provided to it grounds and it doent get shorted.
+         The breadboard arrangents are like switch is connected with resistor in series and it isfurther connected to the ground and either side of the switch with the positive terminal side is attached to the pin.
+         the led is connected in series with the swicth with its positive terminal side and switchs negative terminal while the positive side of led is also connected to the different pin of audrino and negative side of it connected to the ground.
+Observation:-now simply write the code and port to hardware ..if all things are correct it get executed.
+problems faced: not such.
