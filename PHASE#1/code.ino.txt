@@ -1,0 +1,46 @@
+int relay=9;
+int sensor=8;
+int led=13;
+unsigned long t=0;
+void setup();
+{
+Serial.begin(9600)
+pinMode(relay,OUTPUT);
+pinMode(sensor,INPUT);
+pinMode(led,OUTPUT);
+digitalWrite(relay,HIGH);
+digitalWrite(Led,LOW);
+while((millis()<1300))
+{
+digitalWrite(led,HIGH);
+delay(50);
+digitalWrite(led,LOW);
+delay(50);
+}
+digitalWrite(led,LOW);
+}
+void loop()
+{
+digitalWrite(relay,HIGH);
+digitalWrite(led,LOW);
+if(digitalRead(sensor)==HIGH)
+{
+t=millis();
+while((millis()<(t+5000)))
+{
+digitalWrite(relay,LOW);
+digitalWrite(led,HIGH);
+if((millis()>(t+2300))&&digital(sensor)==HIGH)
+{
+t=millis();
+}
+}
+}
+}
+
+
+
+
+
+
+
